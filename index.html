@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Weather Forecast</h1>
+    <form>
+      <label for="city">City:</label>
+      <input type="text" id="city" required>
+      <br>
+      <label for="hours">Forecast Hours:</label>
+      <select id="hours" required>
+        <option value="3">3 hours</option>
+        <option value="6">6 hours</option>
+        <option value="9">9 hours</option>
+        <option value="12">12 hours</option>
+      </select>
+      <br>
+      <button type="submit">Get Forecast</button>
+    </form>
+
+    <div id="weather-icon"></div>
+<div id="location"></div>
+<div id="desc"></div>
+<div id="c"></div>
+<div id="windspeed"></div>
+
+
+    <ul id="forecast-list"></ul>
+   <h2 id="error"></h2>
+  </body>
+
+  <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+</html>
